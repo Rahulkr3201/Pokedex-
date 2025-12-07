@@ -74,7 +74,6 @@ export default function FavoritesPage() {
           )}
         </main>
 
-        {/* ⭐ MODAL — Opens when a card is clicked */}
         {selectedPokemon && (
           <PokemonModal
             name={selectedPokemon}
