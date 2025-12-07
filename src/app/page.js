@@ -55,13 +55,13 @@ export default function HomePage() {
     >
       <div className="absolute inset-0 bg-black/20"></div>
 
-      {/* CONTENT WRAPPER */}
+      {}
       <div className="relative z-10 flex flex-col flex-grow">
         <Navbar searchValue={rawSearch} onSearch={setRawSearch} />
 
-        {/* MAIN NOW FILLS ALL REMAINING SPACE */}
+        {}
         <main className="max-w-5xl mx-auto px-4 py-6 flex-grow">
-          {/* HEADER */}
+          {}
           <motion.header
             variants={fadeIn}
             initial="hidden"
@@ -79,7 +79,7 @@ export default function HomePage() {
             </div>
           </motion.header>
 
-          {/* SEARCH + FILTER */}
+          {}
           <motion.section
             variants={slideUp}
             initial="hidden"
@@ -94,7 +94,7 @@ export default function HomePage() {
             />
           </motion.section>
 
-          {/* INFO BAR */}
+          {}
           <motion.section
             variants={fadeIn}
             initial="hidden"
@@ -123,14 +123,14 @@ export default function HomePage() {
             )}
           </motion.section>
 
-          {/* LOADER BEFORE CONTENT */}
+          {}
           {loading && (
             <div className="w-full flex justify-center items-center py-16">
               <Spinner />
             </div>
           )}
 
-          {/* RESULTS */}
+          {}
           {!loading && (
             <>
               {normalizedSearch.length > 0 && normalizedSearch.length < 2 && (
@@ -190,7 +190,7 @@ export default function HomePage() {
           )}
         </main>
 
-        {/* FIXED FOOTER ALWAYS AT BOTTOM */}
+        {}
         <Footer />
       </div>
     </div>
